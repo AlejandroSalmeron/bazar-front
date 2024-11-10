@@ -1,0 +1,20 @@
+/* src/Sales.css */
+.sales-container {
+    padding: 20px;
+}
+
+.sales-container h1 {
+    margin-bottom: 20px;
+}
+
+.sales-container .sale-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.sales-container .sale-card p {
+    margin: 5px 0;
+}
