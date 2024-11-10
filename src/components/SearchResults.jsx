@@ -44,7 +44,6 @@ const SearchResults = () => {
                                             <p className="card-description">{product.description}</p>
                                             <p className="card-price">${product.price}</p>
                                             <div className="card-rating">
-                                                {/* Renderizamos la cantidad de estrellas en función del rating */}
                                                 {Array.from({ length: 5 }, (_, index) => (
                                                     <span
                                                         key={index}

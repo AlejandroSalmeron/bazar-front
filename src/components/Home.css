@@ -1,11 +1,9 @@
-/* Home.css */
 .home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Asegura que ocupe toda la altura de la pantalla */
     padding: 20px;
     box-sizing: border-box;
 }

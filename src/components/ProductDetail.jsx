@@ -30,7 +30,6 @@ const ProductDetail = () => {
 
     if (!product) return <p>Cargando...</p>;
 
-    // Redondeo del rating
     const integerPart = Math.floor(product.rating);
     const decimalPart = product.rating - integerPart;
     const roundedRating = decimalPart >= 0.5 ? Math.ceil(product.rating) : Math.floor(product.rating);
@@ -39,7 +38,6 @@ const ProductDetail = () => {
         <div className="product-detail-container">
             <h1>{product.title}</h1>
 
-            {/* Mostrar las imágenes del producto */}
             <div className="product-images">
                 {product.images.map((image, index) => (
                     <img
@@ -56,7 +54,6 @@ const ProductDetail = () => {
             <p className="product-stock">Stock: {product.stock}</p>
             <p className="product-category">Categoría: {product.category}</p>
 
-            {/* Calificación de estrellas */}
             <div className="product-rating">
                 {Array.from({ length: 5 }, (_, index) => (
                     <span
@@ -68,7 +65,6 @@ const ProductDetail = () => {
                 ))}
             </div>
 
-            {/* Botón de compra */}
             <button onClick={handlePurchase} className="buy-button">Comprar</button>
         </div>
     );

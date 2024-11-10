@@ -1,4 +1,3 @@
-// src/Sales.js
 import React, { useEffect, useState } from 'react';
 import { getSales } from '../services/api';
 import './Sales.css';
